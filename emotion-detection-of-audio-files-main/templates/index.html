@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Dashboard</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <div class="">
+        <h1 class="home_heading"><img src="../static/images/HOME_HEADING.png" alt="Emotion Detection Dashboard"></h1>
+
+        
+        <div class="image-container">
+            
+            <a href="{{ url_for('upload_page') }}"><img src="{{ url_for('static', filename='images/upload.png') }}" alt="View Accuracy"></a>
+            <a href="{{ url_for('accuracy') }}"><img src="{{ url_for('static', filename='images/analysis.png') }}" alt="View Accuracy"></a>
+        </div>
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
